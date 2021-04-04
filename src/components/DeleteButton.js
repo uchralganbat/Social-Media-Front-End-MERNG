@@ -51,8 +51,6 @@ function DeleteButton({ postId, commentId, callback }) {
                 <Icon name="cancel" style={{margin: 0}}/>
             </Button>
             </>) : (
-                <div className="tooltip">
-                <span className="tooltiptext">{commentId ? 'Delete comment' : 'Delete post'}</span>
                 <Button
                     as="div" 
                     color="red" 
@@ -60,8 +58,7 @@ function DeleteButton({ postId, commentId, callback }) {
                     onClick={() => setConfirmOpen(true)}
                 > 
                     <Icon name="trash" style={{margin: 0}}/>
-                </Button>
-                </div>)
+                </Button>)
             }
         </>
     );
