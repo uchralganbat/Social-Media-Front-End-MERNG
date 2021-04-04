@@ -7,7 +7,7 @@ import { ApolloProvider } from '@apollo/react-hooks';
 import { setContext } from 'apollo-link-context';
 
 const httpLink = createHttpLink({
-    uri: 'proxy": "https://floating-wildwood-03676.herokuapp.com/'
+    uri: 'https://floating-wildwood-03676.herokuapp.com/'
 });
 
 
